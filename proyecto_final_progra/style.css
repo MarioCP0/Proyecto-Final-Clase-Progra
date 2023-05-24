@@ -1,0 +1,124 @@
+body {
+  background-color: white;
+  text-align: center;
+  font-family: candara;
+  font-size: 22px;
+  margin: 40px 160px;
+  color: #253550;
+}
+
+
+file{
+  font-family: Candara;
+}
+
+section{
+  background-color: #b5d5ee;
+  border-radius: 20px;
+  margin: 2px auto;
+  text-align: center;
+  width: 45%;
+}
+
+header{
+  color: #6f614a;
+  border: outset;
+  border-color: #Dfc394;
+  border-width: 8px;
+  border-radius: 42px;
+  padding: 8px;
+  margin: 60px;
+}
+
+hr{
+  margin: 0px;
+  border: 3px solid #Dfc394;
+  border-top: 2px solid #Dfc394;
+  background-color: #Dfc394;
+}
+
+.container {
+    display: grid;
+    margin: 55px 90px 150px 90px;
+    grid-template-columns: repeat(auto-fit, mimax(150px, 1fr));
+	  grid-auto-rows: 3em;
+    grid-gap: 30px 8px;
+    height: 1840px;
+}
+
+.container div{
+    border: solid hidden;
+    padding: 25px;
+    height: 130px;
+    text-align: center;
+}
+
+#uno, #tres, #cinco, #siete, #nueve, #once, #trece{
+  grid-column: 1/4
+}
+
+#dos, #cuatro, #seis, #ocho, #dies, #doce, #catorce{
+  grid-column: 4/6
+}
+
+#one{
+  grid-column: 1/6;
+  margin: 60px 0px;
+  height: 10px;
+}
+
+@supports(object-fit: cover){
+    .container img{
+      height: 110%;
+      object-fit: contain;
+      object-position: center;
+    }
+}
+
+@media (max-width: 950px){
+body{ margin: 10px 82px;}
+section { width: 60%}
+}
+
+@media (max-width: 1000px){
+.container { margin: 0px; padding: auto; align: center; font-size: 19px;}
+.container img{ height: 80%}
+header{ border-width: 7px; padding: 5px; font-size: 0.9em; height: 80px;}
+}
+
+.search-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  z-index: 9999;
+}
+
+.search-box form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  height: 30px;
+  width: 200px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+.search-btn {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  padding: 3px;
+  border-radius: 50%;
+  border: none;
+  background-color: #242fc9;
+  cursor: pointer;
+}
+
+.search-btn img {
+  width: 100%;
+  height: auto;
+}
